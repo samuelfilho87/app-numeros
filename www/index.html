@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="Content-Security-Policy"
+			content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+	<title>Números</title>
+</head>
+
+<body>
+	<div id="app">
+		<main>
+			<header>
+				<h1>Números</h1>
+
+				<form action="" id="form">
+					<input type="text" id="number" />
+					<button type="submit">
+						OK
+					</button>
+				</form>
+			</header>
+
+			<section id="result">
+				<h2>Número informado: <span id="infoNumber"></span></h2>
+
+				<p>
+					É um número primo: <span id="prime"></span><br />
+					Binário: <span id="binary"></span><br />
+					Hexadecimal: <span id="hexadecimal"></span><br />
+					Cor: <span id="color"></span><span id="show-color"></span>
+				</p>
+			</section>
+
+			<div id="msg">
+				Informe um número.
+			</div>
+		</main>
+	</div>
+
+	<script src="cordova.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

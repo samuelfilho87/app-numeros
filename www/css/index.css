@@ -1,0 +1,136 @@
+:root {
+	--background: #f0f2f5;
+	--red: #e52e4d;
+	--green: #33cc95;
+	--orange: #ff7e00;
+
+	--text-title: #363f5f;
+	--text-body: #969cb3;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+	
+	background: var(--background);
+	-webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight: 700;
+	color: var(--orange);
+}
+
+h1 {
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#app {
+	width: 100%;
+	min-height: 100vh;
+	padding: 40px;		
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width: 100%;
+	padding: 24px;
+	border-radius: 4px;
+	background: #2e2c2c;
+	box-shadow: 0 0 16px #00000050;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header form {
+	width: 100%;
+	max-width: 140px;
+	margin: 8px auto;
+}
+
+header form input {
+	width: 100%;
+	padding: 8px;
+	font-weight: 700;
+	color: var(--orange);
+	text-align: center;
+	border: solid 2px var(--orange);
+	border-radius: 4px;
+	background: #3d3b3b;
+}
+
+header form button {
+	width: 100%;
+	margin-top: 8px;
+	padding: 8px;
+	font-weight: 700;
+	border: solid 2px var(--orange);
+	border-radius: 4px;
+	background: var(--orange);
+}
+
+main #msg {
+	height: 0px;
+	margin-top: 8px;
+	color: #fff;
+	text-align: center;
+	visibility: hidden;
+}
+
+section#result {
+	height: 0px;
+	visibility: hidden;
+	overflow-x: scroll;
+}
+
+section#result h2 {
+	margin: 16px 0px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+
+section#result span {
+	font-weight: 900;
+	color: var(--orange);
+}
+
+section#result span#color {
+	text-transform: uppercase;
+}
+
+section#result p {
+	color: #fff;
+}
+
+#show-color {
+	width: 12px;
+	height: 12px;
+	margin-left: 8px;
+	border: solid 1px #fff;
+	background: none;
+	display: inline-block;
+}
